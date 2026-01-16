@@ -1,5 +1,6 @@
 import time, random, os, pygame
 from ProcessGrabber import ProcessGrabber
+def prGreen(s): print("\033[92m {}\033[00m".format(s))
 
 class RouletteWheel():
     def __init__(self):
@@ -51,7 +52,7 @@ class RouletteWheel():
                 value = f"{self.processes[idx][1]} {self.processes[idx][0]}"
 
                 if i == self.center:
-                    print(f">>> {value} <<<")
+                    prGreen(f">>> {value} <<<")
                 else:
                     print(f"    {value}")
 
