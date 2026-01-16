@@ -7,4 +7,4 @@ class ProcessGrabber:
         random.shuffle(self.processes)
         
     def terminateProcess(self, procID: int):
-        self.wmi.Win32_Process(ProcessId=procID).Terminate()
+        self.operatingSystem.Win32_Process(ProcessId=procID).Terminate()
