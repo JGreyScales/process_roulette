@@ -66,7 +66,7 @@ class RouletteWheel():
             print("🎰 Roulette Wheel\n")
             print(f"🟢 Ball landed on: {self.processes[0]}. It will be terminated in: {cooldown - i} seconds")
             time.sleep(1)
-        ProcessGrabber.terminateProcess(self.processes[0][0])
+        self.processHandler.terminateProcess(self.processes[0][0])
         
         
             
