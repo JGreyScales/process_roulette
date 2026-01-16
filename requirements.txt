@@ -2,3 +2,4 @@ wmi
 time
 random
 os
+pygame
